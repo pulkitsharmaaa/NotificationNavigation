@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Alert } from 'react-native';
 import { requestUserPermission, NotificationListener } from "./src/utils/pushNotification";
 import { GetFCMToke } from './src/utils/pushNotification';
 import messaging from '@react-native-firebase/messaging';
@@ -14,7 +13,7 @@ const App = () => {
 
         channelId: 'pulkit', // (required)
 
-        channelName: `pulkit_practice`, // (required)
+        channelName: `notification_practice`, // (required)
 
         channelDescription: `A custom channel to categorise your custom notifications. Updated at: ${Date.now()}`, // (optional) default: undefined.
 

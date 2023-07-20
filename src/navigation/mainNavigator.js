@@ -37,6 +37,17 @@ const Navigator = () => {
         }
         setLoading(false);
       });
+
+      messaging().onMessage(remoteMessage => {
+        console.log(
+          'Notification caused app to open from background state:',
+          remoteMessage.notification,
+        );
+        //   setInitialRoute('notificationScreen');
+      //   navigate('notificationScreen', {data: remoteMessage.data});
+        navigate('notificationScreen');
+      });
+
   }, []);
 
   if (loading) {
