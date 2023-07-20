@@ -29,7 +29,7 @@ export async function GetFCMToke(){
     }
 }
 
-export const NotificationListner = () =>{
+export function NotificationListener(){
 
     // Assume a message-notification contains a "type" property in the data payload of the screen to open
 
